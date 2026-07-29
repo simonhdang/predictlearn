@@ -72,8 +72,8 @@ variable moderates which is your claim, not the model's.
 
 ## Corrections to previously published code
 
-The cross-validation routines differ from those in Appendix E of Dang, Quach
-and Roberts (2025). Three defects are corrected, each marked in the source:
+The cross-validation routines modified from those in Appendix E of Dang, Quach
+and Roberts (2025). Each marked in the source:
 
 1. **Non-comparable evaluation.** Grow-Shrink was evaluated with
    `lm(target ~ .)`, a regression on every variable in the data, while
@@ -81,9 +81,8 @@ and Roberts (2025). Three defects are corrected, each marked in the source:
    variable on its own descendants leaks information and understates the error,
    by an amount that grows with the number of descendants. Both algorithms now
    use one identical routine. See `cv_network_rmse()`.
-2. **Mis-indexed target.** The Hill-Climbing loop scored predictions of
-   `reasonsf` against observed `attitude`. Each target is now scored against
-   itself.
+2. **Mis-indexed target.** The Hill-Climbing loop scored predictions against itself
+   
 3. **In-sample "cross-validation".** The GAM fold loop refitted on the complete
    sample and predicted rows it had trained on. It now refits on training rows
    only. See `cv_gam()`.
