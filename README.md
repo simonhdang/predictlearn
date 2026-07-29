@@ -101,7 +101,7 @@ so they do not already encode the structure being tested.
 
 > Dang, S. (2026). PredictLearn: Machine learning discovery of structure in
 > PLS-SEM models (Version 0.1.0) [Computer software].
-> https://doi.org/XXXXX
+> https://doi.org/XXXXX (pending DOI)
 
 ## Licence
 
