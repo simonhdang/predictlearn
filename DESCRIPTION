@@ -1,0 +1,33 @@
+Package: predictlearn
+Title: Machine Learning Discovery of Structure in PLS-SEM Models
+Version: 0.1.0
+Authors@R: 
+    person("Simon", "Dang", email = "simon.hdang@gmail.com", role = c("aut", "cre"))
+Description: Takes raw indicator data, estimates a PLS-SEM measurement model,
+    extracts latent variable scores, and then searches for structural
+    relationships the researcher did not hypothesize. Bayesian network
+    structure learning identifies candidate arcs under theory-derived
+    constraints; MARS and generalized additive models probe the surviving
+    relationships for non-linearity; candidate models are compared against the
+    theoretical baseline on information criteria and out-of-sample error.
+    Implements the procedure of Richter and Tudoran (2024) with a browser-based
+    interface that runs locally.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.2)
+Imports:
+    seminr (>= 2.3.0),
+    bnlearn,
+    earth,
+    mgcv,
+    caret,
+    igraph,
+    shiny,
+    DT,
+    readxl,
+    stats,
+    utils
+Suggests:
+    Rgraphviz,
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.1

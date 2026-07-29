@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "PredictLearn: Machine Learning Discovery of Structure in PLS-SEM Models"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: Simon
+    family-names: Dang
+    affiliation: "Dahlkemper School of Business, Gannon University"
+version: 0.1.0
+date-released: "2026-07-29"
+license: MIT
+repository-code: "https://github.com/simonhdang/predictlearn"
+abstract: >-
+  Takes raw indicator data, estimates a PLS-SEM measurement model, extracts
+  latent variable scores, and searches for structural relationships the
+  researcher did not hypothesise. Bayesian network structure learning proposes
+  candidate arcs under theory-derived constraints; MARS and generalised
+  additive models probe them for non-linearity and interaction; candidate
+  models are compared against the theoretical baseline on information criteria
+  and out-of-sample error. Runs locally in a browser.
+keywords:
+  - PLS-SEM
+  - Bayesian networks
+  - structure learning
+  - machine learning
+  - marketing research
